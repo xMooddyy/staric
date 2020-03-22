@@ -1,2 +1,133 @@
-# Staric
-For Staric Bot, a multi-purpose bot.
+Documentation
+============================================================
+
+I have started working on this bot a month ago and I made a lot of commands and it turned out successful.
+
+I have decided to publish the bot to the public for people to test and use. I am willing to add more commands if Staric receives a lot of attention.
+
+----------------------------------------------------------------------------------------------------
+
+You can invite the bot for yourself here: [Invite Link](https://discordapp.com/oauth2/authorize?client_id=614175460313661470&permissions=8&scope=bot)
+
+If you want to test our bot before adding it, feel free to join the official server here: [Invite Link](https://discord.gg/EFxRUJU)
+
+
+
+# Bot Features
+
+- Economy.
+- Moderation.
+- Fun commands.
+- Custom-configuration.
+- Music.
+- Logging.
+- Utility.
+
+# Required Permissions
+
+The bot requests the following permissions when you add it. Removing any of these permissions later may hinder the bot’s operation:
+
+For fun, miscellaneous, utility, economy commands:
+
+- Read Messages: The bot must be able to listen to text channels.
+- Send Messages: The bot needs to be able to post messages.
+- Embed Links: The bot will often embeds links for the card answers it provides.
+- Attach Files: The bot will often embed files for the card answers it provides.
+- Use External Emojis: Required so that the bot can use custom emojis in some commands.
+- Add Reactions: The bot has a help menu command that requires the bot to react to the message.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+For Music commands:
+
+- Speak: The bot must be able to speak in voice channels in order to stream music.
+- Connect: The bot must be able to connect to voice channels in order to stream music.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+For moderation, configuration commands:
+
+- Kick Members: The bot must be able to kick members when the kick command is used.
+- Ban Members: The bot must be able to ban members when the ban command is used.
+- Manage Roles: The bot must be able to manage roles when the mute or role command is used.
+- Manage Messages: The bot must be able to manage roles when the purge command is used.
+- Mention Everyone: The bot must be able to mention everyone or here when the announce command is used.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+That's all the permissions the bot requires in order to function.
+
+# Commands
+
+I will be listing all the commands the bot has, with their description, usage, aliases, etc.
+
+() means optional, [] means required.
+
+## Economy
+
+| Command | Description | Usage |
+|--|--|--|
+|  addmoney | Add money to the mentioned user or yourself, can be a mention or an ID. | s!addmoney [amount] (user) |
+| balance | Shows how much money you have, can be yourself or a mentioned user. Takes a mention or an ID. | s!balance (user) |
+| daily | Get your daily money every 24 hours, you get between 100 and 700. | s!daily |
+| leaderboard | Shows top 10 users with money in the server, in descending order. | s!leaderboard |
+| rob | Rob people's money, you get between 100 and 500 money, requires mention. | s!rob [user] |
+| weekly | Get your weekly money every 7 days, you get between 500 and 1500 money. | s!weekly |
+| work | Work in order to get money, you can work every hour, you get between 80 and 500 money. | s!work |
+
+------------------------------------------------------------------------------------------------------------------------
+
+## Fun
+
+| Command | Description | Usage |
+|--|--|--|
+| 8ball | Ask the magic 8ball a question! The answers are random. | s!8ball [question] |
+| ascii | Print a keyword in ascii text, might break if you put a lot of words. | s!ascii [text] |
+| avatar | Get someone's avatar, works with gifs and pictures, takes a mention or an ID. | s!avatar [user] |
+| base64 | Turn your text into a code in base64, you can encode or decode text. | s!base64 [encode / decode] [text] |
+| beautify | Turn your JavaScript code into a beautified code, requires [code blocks](https://support.discordapp.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-). | s!beautify \`\`\`code\`\`\` |
+| captcha | Get a captcha that you can solve, it's for fun not for verification. | s!captcha |
+| ping | The common ping command, get the API and Bot's latency in ms. | s!ping |
+| reminder | Get a reminder to remind you in specified amount of time, requires the format of `10m` or `1d` | s!reminder [time] [reason] |
+| uptime | Get the bot's uptime, meaning how long the bot has been online. | s!uptime |
+
+------------------------------------------------------------------------------------------------------------------------
+
+## Miscellaneous
+
+| Command | Description | Usage |
+|--|--|--|
+| botinfo | Get information about the bot, such as how many guilds, RAM/CPU usage, core, etc. | s!botinfo |
+| contact | If you find any issues within the bot, feel free to use this command, don't abuse it. | s!contact [info] |
+| emojis | Get the emojis of the server, animated and non-animated. | s!emojis |
+| help | A reaction based help menu, get all these commands but in a Discord server. | s!help (command) |
+| icon | Get the icon of the server, can be a gif or picture. | s!icon |
+| info | Get information about a specified user, can take a mention, ID or yourself. | s!info (user) |
+| serverinfo | Get information about the server, such as the member count, channels count, features, etc. | s!serverinfo |
+| support | Shows how to contact us and our support server. | s!support |
+
+------------------------------------------------------------------------------------------------------------------------------
+
+## Moderation
+
+| Command | Description | Usage |
+|--|--|--|
+| announce | Announce a specified announcement, can ping here, everyone or not ping at all. Must configure the announcechannel in the config command | s!announce (here / everyone) [text] |
+| ban | Ban a member from the server, can take a mention or an ID. | s!ban [user] (reason) |
+| clearwarn | Clear someone's all warnings, can take a mention or an ID. | s!clearwarn [user] |
+| config | Configure the settings of your server, such as welcome log, modslogs channel, logs channel, etc. Or simply show them. *For in-depth guide, scroll down.* | s!config (key) [value] |
+| disable | Disable a module in your server, must be enabled in order to disable it. *For in-depth guide, scroll down.* | s!disable [module] |
+| enable | Enable a module in your server, must be disabled in order to enable it. *For in-depth guide, scroll down.* | s!enable [module] |
+| modules | Shows the modules of your server. *For in-depth guide, scroll down.* | s!modules |
+| kick | Kick a member from your server, takes a mention or an ID. | s!kick [user] (reason) |
+| mute | Mute a member from your server, will give them the `Muted` role. Takes a mention or an ID. | s!mute [user] (reason) |
+| purge | Clear a specific number of messages, must be a number between 1 and 99. | s!purge [amount] |
+| role | Give/Remove a role from a user, if the user has the role it will remove it instead. The role name is [Case Sensitive](https://developer.mozilla.org/en-US/docs/Archive/Case_Sensitivity_in_class_and_id_Names) | s!role [user] [role] |
+| say | Make the bot say something, escapes everyone and here pings. | s!say [text] |
+| softban | Ban a member for one day only, takes a mention or an ID. | s!softban [user] (reason) |
+| unban | Unban a member from the server, must be an ID. | s!unban [user] |
+| unmute | Unmute someone from the server, takes a mention or an ID. | s!unmute [user] |
+| warn | Warn a member in the server, takes a mention or an ID. | s!warn [user] [reason] |
+| warnings | List all the warnings a member has, takes a mention or an ID. | s!warnings [user] |
+
+------------------------------------------------------------------------------------------------------------------------------
