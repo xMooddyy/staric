@@ -131,3 +131,52 @@ I will be listing all the commands the bot has, with their description, usage, a
 | warnings | List all the warnings a member has, takes a mention or an ID. | s!warnings [user] |
 
 ------------------------------------------------------------------------------------------------------------------------------
+
+## Music
+
+| Command | Description | Usage |
+|--|--|--|
+| disconnect | Disconnect the bot from a voice channel. | s!disconnect |
+| join | Make the bot join a specific voice channel. | s!join |
+| pause | Pause music to resume at any other time. | s!pause |
+| play | Play any music from youtube. | s!play [URL / Song name] |
+| queue | Shows the queue of the server. | s!queue |
+| resume | Resume a paused song. | s!resume |
+| search | Search for a song in youtube to play. | s!search [query] |
+| skip | Skip the song in the queue. | s!skip |
+| volume | Lower/Increase the volume, minimum is 0, maximum is 200. | s!volume [number] |
+
+------------------------------------------------------------------------------------------------------------------------------
+
+## Roblox
+
+| Command | Description | Usage |
+|--|--|--|
+| whois | Search a user in Roblox, the username is [Case Sensitive](https://developer.mozilla.org/en-US/docs/Archive/Case_Sensitivity_in_class_and_id_Names) | s!whois [username] |
+
+------------------------------------------------------------------------------------------------------------------------------
+
+## Search
+
+| Command | Description | Usage |
+|--|--|--|
+| docs | Search a query in discord.js library. | s!docs [query] |
+| lmgtfy | Short of 'Let me google that for you', google anything in google. | s!lmgtfy [query] |
+| mdn | Search a query in MDN (JavaScript). | s!mdn [query] |
+| npm | Search for a package in NPM. | s!npm [package-name] |
+
+------------------------------------------------------------------------------------------------------------------------------
+
+# Configuration
+
+We are now done with the commands, this is the in-depth guide for how to configure settings in your server.
+
+Let's see the `s!config` command first.
+
+The config command lets you to change the channels where the modules should take place, example below.
+
+![Testing config command](https://i.gyazo.com/a5a02d1b5b65c0f9989294530fd33c2a.gif)
+
+To show the configurations of your server, simply type `s!config` without any arguments, example below.
+
+![Testing config command](https://i.gyazo.com/50b0c78df6c43ea9d12f09099ed47f70.gif)
