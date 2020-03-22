@@ -175,7 +175,7 @@ Let's see the `s!config` command first.
 
 The config command lets you to change the channels where the modules should take place, example below.
 
-![Testing config command](https://i.gyazo.com/a5a02d1b5b65c0f9989294530fd33c2a.gif)
+![Testing config command](https://i.gyazo.com/d0006cf61e67936d2338ac249e13e307.gif)
 
 To show the configurations of your server, simply type `s!config` without any arguments, example below.
 
