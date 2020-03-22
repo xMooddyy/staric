@@ -11,7 +11,7 @@ You can invite the bot for yourself here: [Invite Link](https://discordapp.com/o
 
 If you want to test our bot before adding it, feel free to join the official server here: [Invite Link](https://discord.gg/EFxRUJU)
 
-
+Visit our website here: [Link](https://staric-official.glitch.me)
 
 # Bot Features
 
@@ -180,3 +180,56 @@ The config command lets you to change the channels where the modules should take
 To show the configurations of your server, simply type `s!config` without any arguments, example below.
 
 ![Testing config command](https://i.gyazo.com/ba80feaddc336992189a78f544d14d88.gif)
+
+------------------------------------------------------------------------------------------------------------------------------
+
+The configurations that you can change:
+
+- Prefix. Key: `prefix`
+- Announcement Channel. Key: `announcechannel`
+- Log channel. Key: `logs`
+- Welcome channel. Key: `welcomelog`
+- Leave channel. Key: `leavelog`
+- Modlogs channel. Key: `modlogs`
+
+That's pretty much it, easy right?
+
+# Modules
+
+To change modules, you have to use two commands. `disable` and `enable`. From the name, `enable` enables modules while `disable` disable modules.
+
+To disable/enable a module, check the example below.
+
+![Testing enable/disable command](https://i.gyazo.com/85535aca8f377cd412e94e27e49967fc.gif)
+
+You can't enable/disable a module that's already enabled/disabled, as it will error as example below.
+
+![Testing enable/disable command](https://i.gyazo.com/627da9f10125c896dc04fe202b393b77.gif)
+
+To show which modules that are disable/enabled, simply use the command `s!modules` as example below.
+
+![Testing modules command](https://i.gyazo.com/24986b86fa7636c04d4cbf262e990194.gif)
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Here are the modules that you can enable/disable with description:
+
+| Module | Description | Key |
+|--|--|--|
+| Logs | Logs for general stuff such as message edit, message delete, etc.  | logs |
+|Mod logs| Logs for moderation stuff, such as warn, kick, ban, etc. | modlogs |
+|Leave logs | Logs when someone leaves the server, example of this will be down. | leavelog |
+| Welcome log | Logs when someone joins the server, example of this will be down. | welcomelog |
+| Filter | Filters swear words from the server, if anyone swears the bot would delete the message. | filter |
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Leave and welcome logs:
+
+When someone leaves the server, the bot will respond with a random message in the leavelogs channel as below:
+
+![Leave log](https://i.gyazo.com/7a281e55d11ed77dcdeae03119329aca.png)
+
+When someone joins the server, the bot will respond with a random message in the welcomelogs channel as below:
+
+![Welcome log](https://i.gyazo.com/20ff9bff54758b78e215f5d862dcfddb.png)
