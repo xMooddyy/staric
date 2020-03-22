@@ -179,4 +179,4 @@ The config command lets you to change the channels where the modules should take
 
 To show the configurations of your server, simply type `s!config` without any arguments, example below.
 
-![Testing config command](https://i.gyazo.com/50b0c78df6c43ea9d12f09099ed47f70.gif)
+![Testing config command](https://i.gyazo.com/076245357975de91af08b0a8fe3152e2.gif)
