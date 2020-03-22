@@ -233,3 +233,9 @@ When someone leaves the server, the bot will respond with a random message in th
 When someone joins the server, the bot will respond with a random message in the welcomelogs channel as below:
 
 ![Welcome log](https://i.gyazo.com/20ff9bff54758b78e215f5d862dcfddb.png)
+
+# Conclusion
+
+We are at the end, thanks for reading this documentation. 
+
+If you have any questions, issues or concerns, feel free to use the `s!contact` command, join our [support server](https://discord.gg/EFxRUJU) or contact me in Discord. `ahmood#0001`
