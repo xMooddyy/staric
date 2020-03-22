@@ -234,6 +234,15 @@ When someone joins the server, the bot will respond with a random message in the
 
 ![Welcome log](https://i.gyazo.com/20ff9bff54758b78e215f5d862dcfddb.png)
 
+# Stats
+
+[![Discord Bots](https://top.gg/api/widget/614175460313661470.svg)](https://top.gg/bot/614175460313661470)
+
+[![Discord Bot List](https://discordbotlist.com/bots/614175460313661470/widget)](https://discordbotlist.com/bots/614175460313661470)
+
+[![Abstract Bot List](https://abstractlist.com/api/bots/614175460313661470/widget)](https://abstractlist.com/bot/614175460313661470)
+
+
 # Conclusion
 
 We are at the end, thanks for reading this documentation. 
