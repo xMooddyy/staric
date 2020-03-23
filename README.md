@@ -122,6 +122,7 @@ I will be listing all the commands the bot has, with their description, usage, a
 | kick | Kick a member from your server, takes a mention or an ID. | s!kick [user] (reason) |
 | mute | Mute a member from your server, will give them the `Muted` role. Takes a mention or an ID. | s!mute [user] (reason) |
 | purge | Clear a specific number of messages, must be a number between 1 and 99. | s!purge [amount] |
+| reason | Show a reason for a specific case, you can show or edit the case. | s!reason [case id] (new reason) |
 | role | Give/Remove a role from a user, if the user has the role it will remove it instead. The role name is [Case Sensitive](https://developer.mozilla.org/en-US/docs/Archive/Case_Sensitivity_in_class_and_id_Names) | s!role [user] [role] |
 | say | Make the bot say something, escapes everyone and here pings. | s!say [text] |
 | softban | Ban a member for one day only, takes a mention or an ID. | s!softban [user] (reason) |
@@ -233,6 +234,20 @@ When someone leaves the server, the bot will respond with a random message in th
 When someone joins the server, the bot will respond with a random message in the welcomelogs channel as below:
 
 ![Welcome log](https://i.gyazo.com/20ff9bff54758b78e215f5d862dcfddb.png)
+
+------------------------------------------------------------------------------------------------------------------------------
+
+# Cases
+
+Staric has a feature which is Case IDs, you can show/edit cases with their ID.
+
+When using moderation commands, if you have modlogs enabled it will send a modlog with the case ID:
+
+![Case](https://i.gyazo.com/9f69b51af8ebe5fe29b62875a561f80c.png)
+
+To show/edit cases, use the `reason` command:
+
+![Case](https://i.gyazo.com/c3cbde80e64f707b6796572621a83231.gif)
 
 # Stats
 
