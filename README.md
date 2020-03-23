@@ -115,7 +115,7 @@ I will be listing all the commands the bot has, with their description, usage, a
 | announce | Announce a specified announcement, can ping here, everyone or not ping at all. Must configure the announcechannel in the config command | s!announce (here / everyone) [text] |
 | ban | Ban a member from the server, can take a mention or an ID. | s!ban [user] (reason) |
 | clearwarn | Clear someone's all warnings, can take a mention or an ID. | s!clearwarn [user] |
-| config | Configure the settings of your server, such as welcome log, modslogs channel, logs channel, etc. Or simply show them. *For in-depth guide, scroll down.* | s!config (key) [value] |
+| config | Configure the settings of your server, such as welcome log, modslogs channel, logs channel, etc. Or simply show them. [In-depth guide](https://github.com/xMooddyy/Staric/blob/master/README.md#configuration) | s!config (key) [value] |
 | disable | Disable a module in your server, must be enabled in order to disable it. *For in-depth guide, scroll down.* | s!disable [module] |
 | enable | Enable a module in your server, must be disabled in order to enable it. *For in-depth guide, scroll down.* | s!enable [module] |
 | modules | Shows the modules of your server. *For in-depth guide, scroll down.* | s!modules |
