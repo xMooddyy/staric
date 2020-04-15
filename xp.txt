@@ -1,0 +1,48 @@
+const Xp = require("../models/xp.js");
+
+let xpAdd = Math.floor(Math.random() * 40) + 8;
+
+Xp.findOne({
+  userID: message.author.id,
+  serverID: message.guild.id
+}, (err, res) => {
+  if(err) console.error(err)
+
+  if(!res) {
+    const newXp = new Xp({
+      userID: message.author.id,
+      username: message.author.username,
+      serverID: message.guild.id,
+      xp: 0,
+      level: 1
+    })
+
+
+    newXp.save()
+  } else {
+    let curXp = res.xp;
+    let curLvl = res.level;
+    let nxtLvl = res.level * 1500;
+
+    res.xp = curXp + xpAdd
+
+    
+
+    if(nxtLvl <= res.xp) {
+
+      res.level = curLvl + 1
+      let lvlup = new Discord.RichEmbed()
+      .setTitle("Level up!")
+      .setColor(0x00ff00)
+      .setDescription(`New level: ${curLvl + 1}`)
+      .setThumbnail("https://cdn.glitch.com/d5e60773-2c4c-4b33-aabb-19f8b0c6d0ac%2F786129a0-2c19-413e-a9b8-27c502ba9c5c.image.png?v=1576960786570");
+
+    message.channel.send(lvlup).then(msg => {
+      msg.delete(6000)
+    });
+
+    res.save()
+
+    }
+  }
+    })

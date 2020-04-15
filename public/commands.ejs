@@ -1,0 +1,33 @@
+<head>
+	<meta charset="UTF-8">
+  <meta property="og:site_name" value="Staric">
+  <meta property="twitter:title" value="Commands">
+  <meta property="twitter:url" value="http://staric.glitch.me/commands">
+	<title>Commands</title>
+	<link rel="stylesheet" type="text/css" href="com.css">
+  <base href="https://staric-official.glitch.me/" target="/index.html">
+  <link rel="shortcut icon" type="image/png" href="https://cdn.glitch.com/b0aa5a88-a548-4566-8d92-145fada35740%2Fcircle-cropped%20(1).png?v=1583413836410" />
+</head>
+<body>
+  <div class="topnav">
+  <a href="/">Home</a>
+  <a class="active" href="#">Commands</a>
+  <a href="/stats">Stats</a>
+  <a href="https://discord.gg/EFxRUJU">Support Server</a>
+
+</div>
+</body>
+<% const categories = ['miscellaneous', 'moderation', 'owners', 'roblox', 'music', 'economy', 'fun', 'search'];
+categories.forEach(category => {
+  let dir = bot.commands.filter(c => c.config.category === category);
+  const capitalise = category.slice(0, 1).toUpperCase() + category.slice(1);
+%>
+<h2 class="category-name">
+    <%= `  ${capitalise} [${dir.size}]`  %> 
+</h2>
+<% for (const command of dir) { %>
+<ul class="commands">
+  <li> <%= `${command[0]} - ${command[1].config.description} - Aliases: ${command[1].config.aliases ? command[1].config.aliases.join(', ') : "None."}`%></li>
+</ul>
+<% } %>
+<% }) %>

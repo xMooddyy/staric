@@ -1,0 +1,31 @@
+body {
+  background: #4a4a4a;
+  font-family: verdana;
+}
+p {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+th {
+  color: black;
+}
+
+td {
+  color: white;
+}
+h1 {
+  height: 20px;
+  padding: 10px;
+  font-family: verdana;
+	width: 100%;
+  text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	color: #ffb3b3;
+	background: red;
+	outline: none;
+	border: 1px solid #cc0000;
+	border-radius: 1px;
+	transition: .4s;
+}

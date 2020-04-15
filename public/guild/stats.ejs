@@ -1,0 +1,38 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="/statscss.css">
+  <title>Staric Stats</title>
+  <link rel="shortcut icon" type="image/png" href="https://cdn.glitch.com/b0aa5a88-a548-4566-8d92-145fada35740%2Fcircle-cropped%20(1).png?v=1583413836410" />
+</head>
+<body>
+  <div class="topnav">
+  <a href="/">Home</a>
+  <a href="/commands">Commands</a>
+  <a class="active" href="#">Stats</a>
+  <a href="https://discord.gg/EFxRUJU">Support Server</a>
+
+
+</div>
+</body>
+
+<div class="jumbotron">
+        <div class="row justify-content-md-center">
+          <div class="col-4-text-nowrap"><i class="fa fa-fw fa-server" aria-hidden="true"></i> Members:</div>
+          <div class="col-5-text-nowrap"><strong><%= guild.members.size %> Members</strong></div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-4-text-nowrap"><i class="fa fa-fw fa-clock-o" aria-hidden="true"></i> Guild ID:</div>
+          <div class="col-5-text-nowrap"><strong><%= guild.id %></strong></div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-4-text-nowrap"><i class="fa fa-fw fa-users" aria-hidden="true"></i> Channels:</div>
+          <div class="col-5-text-nowrap"><strong><%= guild.channels.size %> Users</strong></div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-4-text-nowrap"><i class="fa fa-fw fa-tasks" aria-hidden="true"></i> Guild Owner:</div>
+          <div class="col-5-text-nowrap"><strong><%= guild.owner.user.username %></strong></div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-4-text-nowrap"><i class="fa fa-fw fa-hashtag" aria-hidden="true"></i> Roles:</div>
+          <div class="col-5-text-nowrap"><strong><%= guild.roles.size %></strong></div>
+        </div>
+        

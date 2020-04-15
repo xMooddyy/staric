@@ -1,0 +1,16 @@
+{
+  "MISSING_ADMINISTRATOR": "You don't have the required permissions to preform this command. (Missing permissions: %missingpermissions).",
+  "BOT_MISSING_PERMISSION": "I don't have the required permissions to preform this command.",
+  "MISSING_MANAGE_MESSAGES": "You don't have the required permissions to preform this command. (Missing permissions: `MANAGE_MESSAGES`).",
+  "MISSING_KICK_MEMBERS": "You don't have the required permissions to preform this command. (Missing permissions: `KICK_MEMBERS`).",
+  "MISSING_BAN_MEMBERS": "You don't have the required permissions to preform this command. (Missing permissions: `BAN_MEMBERS`).",
+  "MISSING_MANAGE_CHANNELS": "You don't have the required permissions to preform this command. (Missing permissions: `MANAGE_CHANNELS`).",
+  "MISSING_MANAGE_GUILD": "You don't have the required permissions to preform this command. (Missing permissions: `MANAGE_GUILD`).",
+  "MISSING_MANAGE_ROLES": "You don't have the required permissions to preform this command. (Missing permissions: `MANAGE_ROLES`).",
+  "MISSING_MANAGE_WEBHOOKS": "You don't have the required permissions to preform this command. (Missing permissions: `MANAGE_WEBHOOKS`).",
+  "MISSING_MANAGE_EMOJIS": "You don't have the required permissions to preform this command. (Missing permissions: `MANAGE_EMOJIS`).",
+  "default_embedcolour": "#add8e6",
+  "random_embedcolour": "RANDOM",
+  "default_embedfooter": "Made by ahmood#0001",
+  "default_prefix": "s!"
+}
