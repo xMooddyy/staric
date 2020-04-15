@@ -115,14 +115,13 @@ I will be listing all the commands the bot has, with their description, usage, a
 | announce | Announce a specified announcement, can ping here, everyone or not ping at all. Must configure the announcechannel in the config command | s!announce (here / everyone) [text] |
 | ban | Ban a member from the server, can take a mention or an ID. | s!ban [user] (reason) |
 | clearwarn | Clear someone's all warnings, can take a mention or an ID. | s!clearwarn [user] |
-| config | Configure the settings of your server, such as welcome log, modslogs channel, logs channel, etc. Or simply show them. [In-depth guide](https://github.com/xMooddyy/Staric/blob/master/README.md#configuration) | s!config (key) [value] |
-| disable | Disable a module in your server, must be enabled in order to disable it. [In-depth guide](https://github.com/xMooddyy/Staric/blob/master/README.md#modules) | s!disable [module] |
-| enable | Enable a module in your server, must be disabled in order to enable it. [In-depth guide](https://github.com/xMooddyy/Staric/blob/master/README.md#modules) | s!enable [module] |
-| modules | Shows the modules of your server. [In-depth guide](https://github.com/xMooddyy/Staric/blob/master/README.md#modules)* | s!modules |
+| config | Configure the settings of your server, such as welcome log, modslogs channel, logs channel, etc. Or simply show them. *For in-depth guide, scroll down.* | s!config (key) [value] |
+| disable | Disable a module in your server, must be enabled in order to disable it. *For in-depth guide, scroll down.* | s!disable [module] |
+| enable | Enable a module in your server, must be disabled in order to enable it. *For in-depth guide, scroll down.* | s!enable [module] |
+| modules | Shows the modules of your server. *For in-depth guide, scroll down.* | s!modules |
 | kick | Kick a member from your server, takes a mention or an ID. | s!kick [user] (reason) |
 | mute | Mute a member from your server, will give them the `Muted` role. Takes a mention or an ID. | s!mute [user] (reason) |
 | purge | Clear a specific number of messages, must be a number between 1 and 99. | s!purge [amount] |
-| reason | Show a reason for a specific case, you can show or edit the case. [In-depth guide](https://github.com/xMooddyy/Staric/blob/master/README.md#cases) | s!reason [case id] (new reason) |
 | role | Give/Remove a role from a user, if the user has the role it will remove it instead. The role name is [Case Sensitive](https://developer.mozilla.org/en-US/docs/Archive/Case_Sensitivity_in_class_and_id_Names) | s!role [user] [role] |
 | say | Make the bot say something, escapes everyone and here pings. | s!say [text] |
 | softban | Ban a member for one day only, takes a mention or an ID. | s!softban [user] (reason) |
@@ -234,20 +233,6 @@ When someone leaves the server, the bot will respond with a random message in th
 When someone joins the server, the bot will respond with a random message in the welcomelogs channel as below:
 
 ![Welcome log](https://i.gyazo.com/20ff9bff54758b78e215f5d862dcfddb.png)
-
-------------------------------------------------------------------------------------------------------------------------------
-
-# Cases
-
-Staric has a feature which is Case IDs, you can show/edit cases with their ID.
-
-When using moderation commands, if you have modlogs enabled it will send a modlog with the case ID:
-
-![Case](https://i.gyazo.com/9f69b51af8ebe5fe29b62875a561f80c.png)
-
-To show/edit cases, use the `reason` command:
-
-![Case](https://i.gyazo.com/c3cbde80e64f707b6796572621a83231.gif)
 
 # Stats
 
